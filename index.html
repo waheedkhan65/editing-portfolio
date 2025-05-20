@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinematicCraft | Professional Video Editor</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="logo-preloader" data-text="CinematicCraft">CinematicCraft</div>
+            <div class="loading-bar"></div>
+            <p>Loading your visual experience...</p>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Loading Animation -->
+    <div class="loading-animation"></div>
+
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Cinematic<span>Craft</span></a>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Elite Video Editing</h1>
+                <p class="hero-subtitle">Transform your raw footage into captivating visual stories with premium editing services</p>
+                <div class="btn-group">
+                    <a href="#portfolio" class="btn">Explore Work</a>
+                    <a href="#contact" class="btn btn-outline">Hire Me Now</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="https://cdn.pixabay.com/photo/2022/07/13/21/57/editing-7320125_1280.jpg" alt="Video Editing Workstation">
+                <div class="glowing-circle"></div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <div class="scroll-down-text">Scroll Down</div>
+            <div class="scroll-down-indicator">
+                <div class="scroll-down-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="section-bg"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Premium Services</h2>
+                <p>Professional video editing services tailored to elevate your visual content</p>
+            </div>
+            <div class="services-container">
+                <div class="service-card animate">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="service-title">CashCow Videos</h3>
+                    <p class="service-description">High-performing viral content optimized for maximum engagement and monetization across platforms.</p>
+                </div>
+                <div class="service-card animate">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="service-title">Vlogging & Lifestyle</h3>
+                    <p class="service-description">Polished, engaging vlogs with seamless transitions, music, and effects that tell your story.</p>
+                </div>
+                <div class="service-card animate">
+                    <div class="service-icon">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <h3 class="service-title">ASMR Content</h3>
+                    <p class="service-description">Precisely edited ASMR videos with enhanced audio and visual quality for an immersive experience.</p>
+                </div>
+                <div class="service-card animate">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Shorts & Reels</h3>
+                    <p class="service-description">Eye-catching, fast-paced short-form content optimized for TikTok, Instagram and YouTube Shorts.</p>
+                </div>
+                <div class="service-card animate">
+                    <div class="service-icon">
+                        <i class="fas fa-podcast"></i>
+                    </div>
+                    <h3 class="service-title">Podcast Editing</h3>
+                    <p class="service-description">Professional audio and video processing for podcasts with clean sound and engaging visuals.</p>
+                </div>
+                <div class="service-card animate">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="service-title">Educational Content</h3>
+                    <p class="service-description">Instructional videos with clear graphics, annotations, and organized structure to maximize learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="section-bg"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+                <p>A showcase of my best video editing work across different styles</p>
+            </div>
+            <div class="portfolio-filter">
+                <div class="filter-item active" data-filter="all">All Projects</div>
+                <div class="filter-item" data-filter="cashcow">Cash Cow</div>
+                <div class="filter-item" data-filter="vlog">Vlogs</div>
+                <div class="filter-item" data-filter="asmr">ASMR</div>
+                <div class="filter-item" data-filter="shorts">Shorts & Reels</div>
+                <div class="filter-item" data-filter="podcast">Podcasts</div>
+                <div class="filter-item" data-filter="education">Educational</div>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="cashcow">
+                    <img src="https://cdn.pixabay.com/photo/2022/07/13/21/57/editing-7320125_1280.jpg" alt="Cash Cow Video Editing" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Viral News Recap</h3>
+                        <p class="portfolio-category">Cash Cow</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="vlog">
+                    <img src="https://cdn.pixabay.com/photo/2023/04/06/09/39/camera-7903435_1280.jpg" alt="Vlog Editing" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Travel Adventure Series</h3>
+                        <p class="portfolio-category">Vlogging</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="asmr">
+                    <img src="https://cdn.pixabay.com/photo/2020/10/08/13/44/control-panel-5638009_1280.jpg" alt="ASMR Content" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Nature Sounds Collection</h3>
+                        <p class="portfolio-category">ASMR</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="shorts">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/18/17/47/iphone-1836071_1280.jpg" alt="Shorts Editing" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Trending Challenge</h3>
+                        <p class="portfolio-category">Shorts & Reels</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="podcast">
+                    <img src="https://cdn.pixabay.com/photo/2023/02/09/18/42/podcast-7779510_1280.png" alt="Podcast Editing" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Tech Talk Weekly</h3>
+                        <p class="portfolio-category">Podcast</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="education">
+                    <img src="https://cdn.pixabay.com/photo/2016/01/15/12/02/editing-1141505_1280.jpg" alt="Educational Content" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Video Editing Masterclass</h3>
+                        <p class="portfolio-category">Educational</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="section-bg"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>The creator behind the exceptional video edits</p>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://cdn.pixabay.com/photo/2020/10/08/14/39/man-5638146_1280.jpg" alt="Professional Video Editor">
+                </div>
+                <div class="about-text">
+                    <h3>Professional Video Editor</h3>
+                    <p>I am a premier pro video editor with over 5 years of experience crafting engaging visual content for creators, businesses, and brands across multiple platforms.</p>
+                    <p>My expertise spans across various content types including viral cash cow videos, captivating vlogs, immersive ASMR content, attention-grabbing shorts, professional podcasts, and educational videos. I specialize in color grading and
+                        audio enhancement to bring your content to life.</p>
+                    <p>With a keen eye for detail and a passion for storytelling, I transform raw footage into compelling narratives that engage viewers and drive results.</p>
+
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-name">
+                                <span>Adobe Premiere Pro</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">
+                                <span>After Effects</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">
+                                <span>DaVinci Resolve</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">
+                                <span>Final Cut Pro</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="section-bg"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Voices</h2>
+                <p>What my satisfied clients have to say about my services</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="https://cdn.pixabay.com/photo/2019/11/19/21/14/portrait-4638912_1280.jpg" alt="Client" class="testimonial-img">
+                        <div class="client-info">
+                            <h4 class="client-name">Alex Morgan</h4>
+                            <p class="client-role">YouTube Creator</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Working with this editor transformed my YouTube channel. Their cash cow videos have consistently hit over a million views, and the editing quality is unmatched. Highly recommended!"</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="https://cdn.pixabay.com/photo/2019/10/22/13/43/portrait-4568762_1280.jpg" alt="Client" class="testimonial-img">
+                        <div class="client-info">
+                            <h4 class="client-name">James Wilson</h4>
+                            <p class="client-role">Podcast Host</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"I've worked with many editors for my podcast, but none compare to the quality and professionalism I've received here. My audience has noted the significant improvement in production value."</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="https://cdn.pixabay.com/photo/2021/08/17/16/00/woman-6553477_1280.jpg" alt="Client" class="testimonial-img">
+                        <div class="client-info">
+                            <h4 class="client-name">Sarah Johnson</h4>
+                            <p class="client-role">Travel Vlogger</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"The color grading and visual effects added to my travel vlogs have taken my content to the next level. Turnaround time is quick, and the quality is consistently exceptional."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="section-bg"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Let's discuss your next project and create something amazing together</p>
+            </div>
+            <div class="contact-form-wrapper">
+                <div class="contact-info">
+                    <h3 class="contact-title">Let's Connect</h3>
+                    <p class="contact-description">Ready to elevate your video content? I'm here to bring your vision to life. Reach out today to discuss your project requirements or to request a custom quote.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email Me At</h4>
+                            <p>waheed@cinematiccraft.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Call Me At</h4>
+                            <p>+92 335 9772265</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Based In</h4>
+                            <p>Islamabad, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <p>Professional video editor specializing in all types of content including cash cow videos, vlogs, ASMR, shorts, reels, podcasts, and educational videos with a focus on cinematic quality and storytelling.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#" class="footer-link">Cash Cow Videos</a></li>
+                        <li><a href="#" class="footer-link">Vlog Editing</a></li>
+                        <li><a href="#" class="footer-link">ASMR Content</a></li>
+                        <li><a href="#" class="footer-link">Shorts & Reels</a></li>
+                        <li><a href="#" class="footer-link">Podcast Editing</a></li>
+                        <li><a href="#" class="footer-link">Educational Videos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            <p>waheed@cinematiccraft.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            <p>+92 335 9772265</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            <p>Islamabad, pakistan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2023 <span>CinematicCraft</span>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Particles JS -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Main JavaScript -->
+    <script src="main.mjs"></script>
+</body>
+
+</html>
