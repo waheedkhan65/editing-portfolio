@@ -325,3 +325,26 @@ function initScript() {
         });
     });
 }
+  const viewBtn = document.getElementById('viewProjectBtn');
+  const videoContainer = document.getElementById('videoContainer');
+  const video = document.getElementById('projectVideo');
+  const playPauseBtn = document.getElementById('playPauseBtn');
+   const projectCard  = document.getElementById("projectCard")
+  viewBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    projectCard.style.display = "none"
+    videoContainer.style.display = 'block';
+    video.play();
+    playPauseBtn.textContent = '⏸ Pause';
+  });
+
+  playPauseBtn.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+      playPauseBtn.textContent = '⏸ Pause';
+    } else {
+      video.pause();
+      playPauseBtn.textContent = '▶️ Play';
+    }
+  });
+
