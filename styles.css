@@ -1,4 +1,3 @@
-/* Reset CSS */
 
 * {
     margin: 0;
@@ -741,14 +740,21 @@ body {
 }
 
 /* Portfolio Section */
-
 .portfolio {
     background-color: rgba(19, 14, 35, 0.9);
     position: relative;
+    padding: 80px 0;
 }
 
 .portfolio .section-bg {
-    background: url('https://cdn.pixabay.com/photo/2021/09/07/07/11/game-console-6603120_1280.jpg');
+    background: url('https://cdn.pixabay.com/photo/2021/09/07/07/11/game-console-6603120_1280.jpg') center center / cover no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.1;
 }
 
 .portfolio-filter {
@@ -757,6 +763,8 @@ body {
     flex-wrap: wrap;
     margin-bottom: 50px;
     gap: 10px;
+    z-index: 2;
+    position: relative;
 }
 
 .filter-item {
@@ -783,7 +791,7 @@ body {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     position: relative;
     z-index: 2;
@@ -798,32 +806,6 @@ body {
     height: 300px;
     background: rgba(25, 20, 41, 0.7);
     backdrop-filter: blur(5px);
-}
-
-.portfolio-item:nth-child(1) {
-    grid-column: span 6;
-    grid-row: span 2;
-    height: auto;
-}
-
-.portfolio-item:nth-child(2) {
-    grid-column: span 3;
-}
-
-.portfolio-item:nth-child(3) {
-    grid-column: span 3;
-}
-
-.portfolio-item:nth-child(4) {
-    grid-column: span 3;
-}
-
-.portfolio-item:nth-child(5) {
-    grid-column: span 3;
-}
-
-.portfolio-item:nth-child(6) {
-    grid-column: span 6;
 }
 
 .portfolio-img {
@@ -847,6 +829,7 @@ body {
     opacity: 0;
     transition: var(--transition);
     padding: 30px;
+    text-align: center;
 }
 
 .portfolio-item:hover .portfolio-overlay {
@@ -872,7 +855,6 @@ body {
     opacity: 0;
     transition: all 0.4s ease 0.1s;
     font-weight: 700;
-    text-align: center;
 }
 
 .portfolio-category {
@@ -1783,4 +1765,5 @@ textarea.form-control {
 
 .section-title {
     animation: fadeInDown 1s ease;
-}
+} 
+
