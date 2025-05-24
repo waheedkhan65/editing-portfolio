@@ -347,4 +347,3 @@ function initScript() {
       playPauseBtn.textContent = '▶️ Play';
     }
   });
-
